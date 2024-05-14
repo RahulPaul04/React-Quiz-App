@@ -64,6 +64,7 @@ function Quiz() {
         setanswerarray(Array(10).fill(''))
         setscore(Array(10).fill(0))
         setviewanswer(false)
+        setcurrent(0)
     }
 
     const changeselection = (element)=>{
@@ -113,9 +114,9 @@ function Quiz() {
                         
                         {viewanswer && correctarray.map((correct,index)=>{
                             return(<div>
-                                <p>{index+1}. {questarray[index]}</p>
-                                <p style={{color:'green'}}>Correct Answer : {correct}</p>
-                                <p style={{color:'#3550DC'}}>Your Answer: {answerarray[index]?answerarray[index]:"No Answer"}</p>
+                                <p className='mx-1'>{index+1}. {questarray[index]}</p>
+                                <p className='mx-1' style={{color:'green'}}>Correct Answer : {correct}</p>
+                                <p className='mx-1' style={{color:'#3550DC'}}>Your Answer: {answerarray[index]?answerarray[index]:"No Answer"}</p>
                             </div>)
                         })}
                     </div>
