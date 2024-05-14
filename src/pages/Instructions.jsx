@@ -11,6 +11,7 @@ function Instructions() {
             <li>Tap an option to select an answer</li>
             <li>Use the arrow to move to next or previous question</li>
             <li>You can answer qusetions in any order and can also come back to previously answered questions to change the answer</li>
+            <li>Answered Question Numbers are shown in a darker color</li>
             <li>Click on the numbers shown on the top to go to that question</li>
             <li>Click Submit when your are finished</li>
         </ul>

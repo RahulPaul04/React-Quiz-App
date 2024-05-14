@@ -1,5 +1,5 @@
 .page-container{
-  height: calc(85vh + 9px);
+  height: calc(85dvh + 9px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .result-container{
-  min-height: calc(85vh + 9px);
+  min-height: calc(85dvh + 9px);
   display: flex;
   justify-content: center;
   align-items: center;

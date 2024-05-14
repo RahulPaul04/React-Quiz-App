@@ -74,9 +74,9 @@ function Quiz() {
 
     //console.log("currenet",current);
   return (
-    <div className='d-flex-column justify-content-center align-items-center' style={{backgroundColor:'#d4d4d4',minHeight:'100vh'}}>
+    <div className='d-flex-column justify-content-center align-items-center' style={{backgroundColor:'#d4d4d4',minHeight:'100dvh'}}>
 
-        <div className='d-flex align-items-center col-md-8 col-12 mx-auto' style={{height:'15vh',backgroundImage:'linear-gradient(to bottom right, #3550DC, #27E9F7)',borderRadius:'0px',
+        <div className='d-flex align-items-center col-md-8 col-12 mx-auto' style={{height:'15dvh',backgroundImage:'linear-gradient(to bottom right, #3550DC, #27E9F7)',borderRadius:'0px',
   boxShadow: '0px 0px 10px rgba(0,0,0,0.4)'}}>
                    <p style={{color:'white',fontSize:'30px',fontWeight:'700',marginLeft:'30px'}}> Computer Quiz</p>
             </div>
@@ -86,7 +86,7 @@ function Quiz() {
             {!submited && <div style={{width:'100%',display:'flex',overflowX:"auto"}} className="selection">
                 <div style={{display:'flex'}} className='mx-auto'>
                     {data && !submited && data.map((question,index)=>(
-                         <div onClick={(e)=>changeselection(e)} className="alpha" style={{height:"40px",minWidth:'40px',borderRadius:'50%',backgroundImage:`${current==index?'linear-gradient(45deg, #3550DC, #27E9F7)':'linear-gradient(45deg, #949494, #949494)'}`,fontWeight:'800',display:'flex',cursor:"pointer", justifyContent:'center',alignItems:'center',color:'white',marginLeft:'10px',marginRight:`${index==9?'10px':'0px'}`,marginBottom:'10px'}}>{index+1}</div>
+                         <div onClick={(e)=>changeselection(e)} className="alpha" style={{height:"40px",minWidth:'40px',borderRadius:'50%',backgroundImage:`${current==index?'linear-gradient(45deg, #3550DC, #27E9F7)':answerarray[index]?'linear-gradient(45deg, #5D5D5D, #5D5D5D) ':'linear-gradient(45deg, #949494, #949494)'}`,fontWeight:'800',display:'flex',cursor:"pointer", justifyContent:'center',alignItems:'center',color:'white',marginLeft:'10px',marginRight:`${index==9?'10px':'0px'}`,marginBottom:'10px'}}>{index+1}</div>
                     ))}
                 </div>
             </div>}
