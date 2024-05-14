@@ -1,0 +1,23 @@
+.buttons>button{
+    background-image: linear-gradient(to left,#949494,#949494);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button:hover{
+    background-image: linear-gradient(to left, #3550DC, #27E9F7);
+    
+}
+
+.submit{
+    color:#3550DC ;
+    border: solid 2px #3550DC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+

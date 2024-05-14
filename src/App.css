@@ -1,0 +1,53 @@
+.page-container{
+  height: calc(85vh + 9px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+  margin-top: -9px;
+}
+
+.result-container{
+  min-height: calc(85vh + 9px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius:5px;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+  margin-top: -9px;
+
+}
+
+/* This will affect the scrollbar of .your-element only */
+.selection {
+  position: relative;
+  overflow: auto;
+}
+
+.selection::-webkit-scrollbar {
+  height: 5px; /* height of the entire scrollbar */
+  
+}
+
+.selection::-webkit-scrollbar-track {
+  background: transparent; 
+  height: 90px;
+  width: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.selection::-webkit-scrollbar-thumb {
+  background: #D4D4D4; 
+  border-radius: 5px;
+}
+
+.selection::-webkit-scrollbar-thumb:hover {
+  background: #BEBEBE; 
+}
+
